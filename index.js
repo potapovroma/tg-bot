@@ -21,6 +21,7 @@ const getByWordTrigger = function*(text: string): Iterable<string> {
       for (const [regexp, answer] of constants.TRIGGERS) {
         if (word.match(regexp)) {
           yield answer;
+          bot.sendMessage(msg.chat.id, `${answer}`);
         }
       }
     }
