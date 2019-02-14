@@ -1,0 +1,17 @@
+{
+  "name": "telega_bot_radik",
+  "version": "1.0.0",
+  "description": "t-bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "11.6.0"
+  },
+  "author": "I",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}
