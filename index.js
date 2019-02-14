@@ -7,4 +7,7 @@ const bot = new TelegramBot(TOKEN, {polling: true});
 
 bot.on('message', msg => {
     bot.sendMessage(msg.chat.id, `Hello from HEROKU, ${msg.from.first_name}!!`);
+    if(msg.chat.id == 'no') {
+        bot.sendMessage(msg.chat.id, `Pidor ty`);
+    }
 });
